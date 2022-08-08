@@ -9,11 +9,9 @@ def solution(progresses, speeds):
     tmp = 0
     for idx in range(len(progresses)):
         if days[tmp] >= days[idx]:
-            print('count')
             count += 1
         else:
             tmp = idx
-            print('reset')
             answer.append(count)
             count = 1
     answer.append(count)
